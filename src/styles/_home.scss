@@ -1,0 +1,332 @@
+@import 'variables';
+
+
+.main__header{
+    width: 100vw;
+    height: calc(100vh - 5rem);
+    display: grid;
+    place-items: center;
+    margin-top: 5rem;
+}
+
+.main__header-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+
+    .main__header-left{
+        margin-top: -3rem;
+
+        h4{
+            margin-bottom: 1rem;
+            font-weight: 400;
+            color: $color-secondary;
+        }
+
+        p{
+            font-size: 1.1rem;
+            margin: 1rem 0 3.5rem;
+        }
+
+
+    }
+
+    .main__header-right{
+        display: grid;
+        place-items: center;
+        position: relative;
+        
+        // &:hover .main__header-circle{
+        //     filter: blur(10px);
+        // }
+
+        .main__header-circle{
+            width: 25rem;
+            height: 25rem;
+            border-radius: 50%;
+            background: linear-gradient(75deg, $color-secondary,transparent);
+            position: absolute;
+            // should use position relative on the image rather than us ezindex on the cirle div
+            z-index: -1;
+            transition:$transition;
+        }
+    }
+}
+
+.main__header-right:hover .main__header-circle{
+    filter: blur(10px);
+}
+
+// -------------------PROGRAM------------------------//
+
+.programs{
+    margin-top: 4rem;
+
+    .programs__wrapper{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 3rem;
+        margin-top: 4rem;
+
+        .programs__program{
+            
+
+            &:hover{
+
+                a{
+                    color: $color-gray-600;
+                    background: $color-secondary;
+                }
+            }
+            
+            a{
+                margin-top: 2.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: $transition;
+            }
+        }
+    }
+}
+
+
+// ---------------- VALUES-----------------
+
+.values__container{
+    display: grid;
+    grid-template-columns: 38% 50%;
+    gap: 12%;
+}
+
+.values__image{
+    filter: saturate(0.25);
+    transition: $transition;
+
+    &:hover{
+        filter: saturate(1);
+    }
+}
+
+.values__right{
+    >p{
+        margin: 1.5rem 0.5rem 3.5rem;
+    }
+
+    .values__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3.4rem 2.4rem;
+
+        .card.values__value{
+            padding-top: 3rem;
+            text-align: left;
+            position: relative;
+
+            span{
+                position: absolute;
+                top: -1.5rem;
+            }
+        }
+    }
+}
+
+
+// --------------------FAQS------------------------//
+
+
+.faqs__wrapper{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 5rem;
+    align-items:flex-start;
+}
+
+.faq{
+    background: $color-gray-500;
+    padding: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button{
+            background: transparent;
+            font-size: 1.5rem;
+            color: $color-gray-100;
+            // transition: $transition;
+        }
+    }
+
+    p{
+        margin-top: 1.5rem;
+    }
+}
+
+
+
+
+
+// ----------------TESTIMONIALS---------------------//
+
+
+.testimonials{
+    width: 50rem;
+    margin-inline: auto;
+
+    .testimonials__head{
+        justify-content: center;
+    }
+
+    .testimonial{
+        margin-top: 5rem;
+        text-align: left;
+        position: relative;
+        padding-top: 5rem;
+
+        &:hover {
+
+            .testimonial__avatar{
+                border-radius: 50%;
+                border-color: $color-gray-400;
+            }
+        }
+
+
+        .testimonial__avatar{
+            width: 6rem;
+            aspect-ratio: 1/1;
+            border: 2px solid transparent;
+            border-radius: 2.5rem;
+            overflow: hidden;
+            position: absolute;
+            top: -2rem;
+            left: calc(50% - 3rem);
+            box-shadow: 0 1.5rem 2rem rgba(26,26,54,0.4);
+            transition: $transition;
+
+        }
+
+        .testimonial__quote{
+            font-style: italic;
+            margin: 1rem 0 2rem;
+        }
+
+        .testimonial__title{
+            margin: 0.3rem;
+        }
+    }
+
+    .testimonials__btn-container{
+        width: fit-content;
+        margin: 2.5rem auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        .testimonials__btn{
+            background: transparent;
+            cursor: pointer;
+
+            svg{
+                fill: $color-primary;
+                font-size: 1.8rem;
+                height: 3rem;
+                width: 3rem;
+            }
+        }
+    }
+}
+
+
+
+// ==================FOOTER=========================//
+
+footer{
+    background: $color-primary;
+    color: $color-gray-100;
+    margin-top: 7rem;
+    padding-top: 7rem;
+    font-size: 0.9rem;
+
+    .footer__container{
+        display: grid;
+        grid-template-columns: 26rem 1fr 1fr 1fr;
+        gap: 6rem;
+
+        article {
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+            align-items: flex-start;
+
+            p{
+                margin-top: 0.5rem;
+            }
+            
+
+            h4{
+                font-size: 1rem;
+                margin-bottom: 0.6rem;
+            }
+
+
+        }
+    }
+}
+
+
+.footer__socials{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    // width: 100%;
+    // justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    a{
+        background: $color-gray-100;
+        padding: 0.7rem;
+        border: 1px solid transparent;   
+        border-radius: 0.6rem;
+        transition: $transition;
+
+        &:hover{
+            border-color: $color-gray-100;
+            background: transparent;
+        }
+
+        svg{
+            color: $color-gray-600;
+        }
+    }
+}
+
+.footer__copyright{
+    color: $color-gray-100;
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 2px solid $color-primary-variant;
+    margin-top: 5rem;
+}
+
+
+
+// ================MEDIA QUERIES=================//
+
+@media screen and (max-width:1024px){
+    // MAIN HEADR SECTION//
+
+    .main__header{
+        
+    }
+}
