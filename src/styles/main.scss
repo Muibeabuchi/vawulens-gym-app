@@ -1,4 +1,4 @@
-@import 'variables' , 'navbar', 'about' , 'contact' , 'gallery' , 'home' , 'plan' , 'trainers' , 'missing';
+@import 'variables' , 'navbar', 'home' , 'contact' , 'gallery' , 'about' , 'plan' , 'trainers' , 'missing';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 *,*::after,*::before{
@@ -11,12 +11,17 @@
     outline: none;
 }
 
+#root{
+    width: 100vw;
+}
+
 body{
     background: $color-gray-600;
     font-family: 'Poppins', sans-serif;
     color:$color-gray-200;
     line-height: 1.7;
     overflow-x: hidden;
+    width: 100vw;
 }
 
 h1,h2,h3,h4,h5{

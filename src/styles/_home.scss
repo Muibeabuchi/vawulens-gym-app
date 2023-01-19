@@ -324,9 +324,192 @@ footer{
 // ================MEDIA QUERIES=================//
 
 @media screen and (max-width:1024px){
-    // MAIN HEADR SECTION//
+    // MAIN HEADER SECTION//
 
     .main__header{
+        height: fit content;
+        padding: 10rem 0;
+
+        .main__header-container{
+            gap: 0;
+
+            .main__header-circle{
+                width: 16rem;
+                height: 16rem;
+            }
+        }
+    }
+
+    // =================PROGRAMS===============//
+
+
+    .programs{
         
+        .programs__wrapper{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    // ==============VALUES=============//
+
+
+    .values{
+        height: fit-content;
+
+
+        .values__container{
+            grid-template-columns: 1fr;
+            justify-content: center;
+            gap: 5rem;
+
+            .values__right{
+                margin-bottom: 7rem;
+
+                .values__wrapper{
+                    gap: 3rem 2rem;
+                }
+            }
+        }
+    }
+
+
+    // ========================FAQS======================//
+
+    .faqs__wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    // ===================TESTEMONIALS==================//
+
+    .testimonials{
+        width: 70%;
+    }
+
+    // =================FOOTER====================//
+
+
+    footer{
+
+        .footer__container{
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;  
+
+            article{
+                align-items: center;
+
+                .logo{
+                    width: 10rem;
+                }
+
+                h4{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width:600px){
+
+    // ===============MAINHEADER=============//
+
+    .main__header{
+        margin-top: 0;
+        padding: 12rem  0  0;
+        height: 100vh;
+
+        .main__header-container{
+            grid-template-columns: 1fr;
+
+            .main__header-left{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                h4{
+                    align-self: flex-start;
+                }
+            }
+            .main__header-right{
+                display: none;
+            }
+        }
+
+    }
+
+
+    // ===============PROGRAMS==================//
+
+    .programs{
+        
+        .programs__wrapper{
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+            place-items: center;
+            // align-items: center;
+            // justify-content: center;
+
+            .programs__program{
+                width: 84%;
+            }
+        }
+    }
+
+    // ==============VALUES==================//
+
+
+    .values{
+
+        .values__wrapper{
+            grid-template-columns: 1fr;
+            gap: 2rem;
+
+            .values__value{
+                width: 84%;
+                margin-inline: auto;
+            }
+        }
+    }
+
+    // ===================FAQ=====================//
+
+    .faqs{
+        margin-top: 3rem;;
+
+        .faqs__wrapper{
+            margin-top: 3rem;
+            gap: 1rem;
+        }
+    }
+
+
+    // =============TESTEMONIALS====================//
+
+    .testimonials{
+        width: 100%;
+    }
+
+    // ============FOOTER=========//
+
+    footer{
+        padding-top:4rem ;
+        margin-top: 5rem;
+
+        .footer__container{
+            grid-template-columns: 1fr;
+            gap: 3rem;
+
+            article{
+                align-items: center;
+
+                p{
+                    text-align: center;
+                }
+            }
+        }
     }
 }
