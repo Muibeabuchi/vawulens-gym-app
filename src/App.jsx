@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {About, Home, Gallery, Contact, Missing, Plan, Trainers} from './pages';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/trainers' element={<Trainers/>} />
         <Route path='*' element={<Missing />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
