@@ -1,0 +1,44 @@
+@import 'variables';
+
+
+.contact__container{
+    display: grid;
+    place-items: center;
+
+    .contact__wrapper{
+        display: flex;
+        gap: 2rem;
+        width: fit-content;
+
+        a{
+            font-size: 2rem;
+            padding: 2rem;
+            border: 2px solid transparent;
+            border-radius: 1.5rem;
+            background: $color-primary;
+            transition: $transition;
+
+            &:hover{
+                background:transparent;
+                border-color: $color-gray-100
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:600px){
+
+    .contact__container{
+        
+        .contact__wrapper{
+            gap: 1.5rem;
+    
+            a{
+                padding: 1rem;
+                font-size: 1.2rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+}

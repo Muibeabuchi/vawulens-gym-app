@@ -490,6 +490,64 @@ footer .footer__container article h4 {
     text-align: center;
   }
 }
+.contact__container {
+  display: grid;
+  place-items: center;
+}
+.contact__container .contact__wrapper {
+  display: flex;
+  gap: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.contact__container .contact__wrapper a {
+  font-size: 2rem;
+  padding: 2rem;
+  border: 2px solid transparent;
+  border-radius: 1.5rem;
+  background: hsl(210deg, 100%, 50%);
+  transition: all 500ms ease;
+}
+.contact__container .contact__wrapper a:hover {
+  background: transparent;
+  border-color: hsl(240deg, 47%, 94%);
+}
+
+@media screen and (max-width: 600px) {
+  .contact__container .contact__wrapper {
+    gap: 1.5rem;
+  }
+  .contact__container .contact__wrapper a {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+  }
+}
+.gallery__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.gallery__container article {
+  border: 1rem solid transparent;
+  transition: all 500ms ease;
+}
+.gallery__container article:hover {
+  border-color: hsl(240deg, 44%, 25%);
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gallery__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
 .about__section-image {
   border-radius: 50%;
   overflow: hidden;

@@ -10,7 +10,21 @@ import Trainer3 from './assets/images/trainer3.jpg';
 import Trainer4 from './assets/images/trainer4.jpg';
 import Trainer5 from './assets/images/trainer5.jpg';
 import Trainer6 from './assets/images/trainer6.jpg';
-
+import Gallery1 from './assets/images/gallery1.jpg';
+import Gallery2 from './assets/images/gallery2.jpg';
+import Gallery3 from './assets/images/gallery3.jpg';
+import Gallery4 from './assets/images/gallery4.jpg';
+import Gallery5 from './assets/images/gallery5.jpg';
+import Gallery6 from './assets/images/gallery6.jpg';
+import Gallery7 from './assets/images/gallery7.jpg';
+import Gallery8 from './assets/images/gallery8.jpg';
+import Gallery9 from './assets/images/gallery9.jpg';
+import Gallery10 from './assets/images/gallery10.jpg';
+import Gallery11 from './assets/images/gallery11.jpg';
+import Gallery12 from './assets/images/gallery12.jpg';
+import Gallery13 from './assets/images/gallery13.jpg';
+import Gallery14 from './assets/images/gallery14.jpg';
+import Gallery15 from './assets/images/gallery15.jpg';
 
 
 export const links = [
@@ -199,7 +213,23 @@ export const testimonials = [
 
 
 
-
+export const galleryImages = [
+    Gallery1,
+    Gallery2,
+    Gallery3,
+    Gallery4,
+    Gallery5,
+    Gallery6,
+    Gallery7,
+    Gallery8,
+    Gallery9,
+    Gallery10,
+    Gallery11,
+    Gallery12,
+    Gallery13,
+    Gallery14,
+    Gallery15
+]
 
 
 
