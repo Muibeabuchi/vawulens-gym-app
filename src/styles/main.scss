@@ -1,4 +1,4 @@
-@import 'variables' , 'navbar', 'home' , 'contact' , 'gallery' , 'about' , 'plan' , 'trainers' , 'missing';
+@import 'variables' , 'navbar', 'home' , 'contact' , 'gallery' , 'about' , 'plans' , 'trainers' , 'missing';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 *,*::after,*::before{
@@ -16,7 +16,7 @@
 }
 
 body{
-    background: $color-gray-600;
+    background: $color-gray-600 url('../assets/images/bg_texture.png');
     font-family: 'Poppins', sans-serif;
     color:$color-gray-200;
     line-height: 1.7;

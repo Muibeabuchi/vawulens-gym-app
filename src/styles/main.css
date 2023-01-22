@@ -602,6 +602,121 @@ footer .footer__container article h4 {
     gap: 2rem;
   }
 }
+.plans__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.plans__container .plan h3 {
+  margin-bottom: 0.8rem;
+}
+.plans__container .plan small {
+  margin-bottom: 2rem;
+}
+.plans__container .plan h1 {
+  color: hsl(210deg, 100%, 65%);
+  display: inline;
+}
+.plans__container .plan h2 {
+  display: inline;
+  color: hsl(240deg, 16%, 41%);
+}
+.plans__container .plan h4 {
+  margin-top: 2rem;
+}
+.plans__container .plan p {
+  margin-top: 1rem;
+  color: hsl(240deg, 47%, 94%);
+}
+.plans__container .plan p.disabled {
+  color: hsl(240deg, 16%, 41%);
+  text-decoration: line-through;
+}
+.plans__container .plan button {
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .plans__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .plans__container {
+    grid-template-columns: 1fr;
+  }
+  .plan {
+    width: 90%;
+    margin-inline: auto;
+  }
+}
+.trainers__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.trainer__image {
+  border-radius: 0 2rem;
+  overflow: hidden;
+}
+
+.card.trainer {
+  padding: 1rem;
+}
+.card.trainer p {
+  margin-top: 0.5rem;
+}
+.card.trainer h3 {
+  margin-top: 2rem;
+}
+
+.trainer__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.trainer__socials a {
+  font-size: 0.7rem;
+  padding: 0.8rem;
+  background: hsl(240deg, 48%, 15%);
+  border-radius: 0.7rem;
+  transition: all 500ms ease;
+}
+
+.trainer:hover a {
+  background: hsl(240deg, 44%, 25%);
+}
+
+@media screen and (max-width: 1024px) {
+  .trainers__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .trainers__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .trainers {
+    width: 90%;
+    margin-inline: auto;
+  }
+}
+.missing__container {
+  text-align: center;
+  padding: 7rem;
+}
+.missing__container .btn {
+  margin-top: 3rem;
+  display: inline-block;
+}
+
 *, *::after, *::before {
   padding: 0;
   margin: 0;
@@ -617,7 +732,7 @@ footer .footer__container article h4 {
 }
 
 body {
-  background: hsl(240deg, 48%, 15%);
+  background: hsl(240deg, 48%, 15%) url("../assets/images/bg_texture.png");
   font-family: "Poppins", sans-serif;
   color: hsl(240deg, 26%, 75%);
   line-height: 1.7;

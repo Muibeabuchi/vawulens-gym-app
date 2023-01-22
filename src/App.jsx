@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import {About, Home, Gallery, Contact, Missing, Plan, Trainers} from './pages';
+import {About, Home, Gallery, Contact, Missing, Plans, Trainers} from './pages';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 
@@ -14,7 +14,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/plans' element={<Plan />} />
+        <Route path='/plans' element={<Plans />} />
         <Route path='/trainers' element={<Trainers/>} />
         <Route path='*' element={<Missing />} />
       </Routes>

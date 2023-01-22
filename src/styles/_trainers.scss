@@ -1,0 +1,66 @@
+.trainers__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4rem;
+}
+
+.trainer__image{
+    border-radius: 0 2rem;
+    overflow: hidden;
+}
+
+.card.trainer{
+    padding: 1rem;
+
+    p{
+        margin-top: 0.5rem;
+    }
+
+    h3{
+        margin-top: 2rem;
+    }
+}
+
+.trainer__socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+
+    a{
+        font-size: 0.7rem;
+        padding: 0.8rem;
+        background: $color-gray-600;
+        border-radius: 0.7rem;
+        transition: $transition;
+    }
+
+
+}
+
+.trainer:hover a{
+    background: $color-gray-500;
+}
+
+
+
+@media screen and (max-width:1024px){
+    .trainers__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .trainers__container{
+        grid-template-columns: 1fr ;
+        gap: 1rem;
+    }
+
+    .trainers{
+        width: 90%;
+        margin-inline: auto;
+    }
+}

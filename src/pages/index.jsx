@@ -4,9 +4,9 @@ import Gallery from './Gallery';
 import Home from './Home';
 import Missing from './Missing';
 import Trainers from './Trainers';
-import Plan from './Plan';
+import Plans from './Plans';
 
 export  {
     About, Contact, Gallery, Home, 
-    Missing, Trainers, Plan 
+    Missing, Trainers, Plans 
 }
